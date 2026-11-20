@@ -1,5 +1,7 @@
 # 安装与操作手册
 
+**简体中文** · [English](operations.en.md)
+
 ## 1. 准备环境
 
 需要 Node.js 24+ 和 npm。Windows PowerShell、macOS 与 Linux 都可从项目根目录运行相同的 npm 命令。使用 Codex 桌面端打开项目，建档和语义打标均按根目录的 [SKILL.md](../SKILL.md) 执行。

@@ -1,5 +1,7 @@
 # 卖家精灵导出字段映射
 
+**简体中文** · [English](column_mapping_guide.en.md)
+
 | 类型 | 文件名示例 | 归属识别 |
 | --- | --- | --- |
 | 拓展流量词 | `extend_30d_2026-11-20.xlsx` | 相关 ASIN 列、逐行 ASIN 或含 ASIN 的流量/排名列 |

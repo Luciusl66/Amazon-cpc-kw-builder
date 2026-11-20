@@ -17,18 +17,20 @@ The smoke test uses sample data and writes an example workbook and JSON snapshot
 
 ## Build a keyword plan for one SKU
 
-1. **Start with a product.** Open this repository in Codex and give it a seed ASIN or Amazon product link. You can also specify your SKU and marketplace. Codex reads the listing, builds a local product profile, and researches competitors on the same marketplace using the project skill. [Codex skill](SKILL.md)
-2. **Export your keyword data.** In SellerSprite, export keyword expansion and reverse ASIN lookup reports for the same marketplace. Save the `.xlsx` files in `workspace/{SKU}/raw_exports/`. The importer supports English and Chinese column headers. [Supported columns](references/column_mapping_guide.md)
+1. **Start with a product.** Open this repository in Codex and give it a seed ASIN or Amazon product link. You can also specify your SKU and marketplace. Codex reads the listing, builds a local product profile, and researches competitors on the same marketplace using the project skill. [Codex skill (Simplified Chinese)](SKILL.md)
+2. **Export your keyword data.** In SellerSprite, export keyword expansion and reverse ASIN lookup reports for the same marketplace. Save the `.xlsx` files in `workspace/{SKU}/raw_exports/`. The importer supports English and Chinese column headers. [Supported columns](references/column_mapping_guide.en.md)
 3. **Import and classify.** Run `npm run ingest -- YOUR-SKU`. Ask Codex to classify the batches under `pending/` and save the results under `tagged/`. Replace `YOUR-SKU` with the folder name created in step 1.
 4. **Validate and export.** Run `npm run validate -- YOUR-SKU`, then `npm run export -- YOUR-SKU`. The Excel workbook and `keywords_snapshot.json` are saved in `workspace/{SKU}/output/`.
 
-You can re-import new reports for the same SKU and keep classifications marked as manually locked in Excel. Each SKU’s profile, raw reports, SQLite database, and exports are stored locally. Workbook tabs and the detailed project guides are in Simplified Chinese.
+You can re-import new reports for the same SKU and keep classifications marked as manually locked in Excel. Each SKU’s profile, raw reports, SQLite database, and exports are stored locally. Workbook tabs and classification labels are in Simplified Chinese.
 
 ## Reference guides
 
-- [Operations guide](docs/operations.md) covers setup, file naming, and resuming a run.
-- [Competitor research](references/competitor_research.md) explains how to verify ASINs and evaluate shared search traffic.
-- [CPC strategy](references/cpc_strategy_matrix.md) covers campaign structure, match types, and negative keywords.
+- [Operations guide](docs/operations.en.md) covers setup, file naming, and resuming a run.
+- [Competitor research](references/competitor_research.en.md) explains how to verify ASINs and evaluate shared search traffic.
+- [SellerSprite field mapping](references/column_mapping_guide.en.md) documents accepted headers and how the importer selects data.
+- [Keyword classification](references/taxonomy_rules.en.md) explains the levels, relevance labels, and tagging format.
+- [CPC strategy](references/cpc_strategy_matrix.en.md) covers campaign structure, match types, and negative keywords.
 
 ## License
 

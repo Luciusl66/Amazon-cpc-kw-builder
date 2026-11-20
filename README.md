@@ -39,6 +39,7 @@ npm run export -- RING-925
 ## 文档
 
 - [操作手册](docs/operations.md)覆盖建档、报表命名、Codex 续跑、人工锁定和常见错误。
+- [竞品筛选与核验](references/competitor_research.md)说明如何核验 ASIN 和评估搜索流量重合。
 - [列名映射](references/column_mapping_guide.md)说明字段、周期和市场数据取值。
 - [分级与打标契约](references/taxonomy_rules.md)说明语义分级、相关性和冲突词证据。
 - [CPC 投放策略](references/cpc_strategy_matrix.md)说明广告结构、匹配方式及阈值。

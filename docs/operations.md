@@ -2,7 +2,7 @@
 
 ## 1. 准备环境
 
-需要 Node.js 24+ 和 npm。Windows PowerShell、macOS 与 Linux 都可从项目根目录运行相同的 npm 命令。使用 Codex 桌面端打开项目，处理语义打标时让 Codex 读取根目录的 `SKILL.md`。
+需要 Node.js 24+ 和 npm。Windows PowerShell、macOS 与 Linux 都可从项目根目录运行相同的 npm 命令。使用 Codex 桌面端打开项目，建档和语义打标均按根目录的 [SKILL.md](../SKILL.md) 执行。
 
 ```bash
 npm ci
@@ -13,7 +13,9 @@ npm test
 
 ## 2. 建档并准备报表
 
-对于示例 SKU `RING-925`，复制模板到 `workspace/RING-925/product_profile.json`。目录名和档案中的 `sku` 必须一致。按实际产品改写核心词根、复合限定、正向属性、冲突红线和竞品品牌。按[竞品筛选与核验](../references/competitor_research.md)为每个 SKU 建立目标为 10 个 ASIN 的竞品库。在 `competitors` 中填写入选 ASIN、层级、主力子体说明和入选理由。目标商品若用于反查，可额外以 `seed` 存档。
+把种子 ASIN 或 Amazon 商品链接发给 Codex 即可开始建档，也可以附上 SKU 和目标站点。Codex 会读取商品页并生成 `workspace/{SKU}/product_profile.json`。已有同站点档案时接续使用。新商品未指定 SKU 时，默认用 ASIN 命名。目录名和档案中的 `sku` 必须一致。
+
+Codex 按[竞品筛选与核验](../references/competitor_research.md)争取确认 10 个竞品 ASIN，并写入入选项的层级、主力子体说明和理由。反查暂不可用时可先生成种子档案和待核验名单。种子商品若用于反查，可额外以 `seed` 存档。以下以指定 SKU `RING-925` 为例。
 
 从卖家精灵手动导出同一站点的 `.xlsx` 报表，将原文件放入 `workspace/RING-925/raw_exports/`。建议在文件名中标注周期和日期。例如：
 

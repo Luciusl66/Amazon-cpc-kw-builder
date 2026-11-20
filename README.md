@@ -21,7 +21,7 @@ npm test
 
 ## 处理一个 SKU
 
-1. 将 [产品档案模板](workspace/_template/product_profile.json) 复制到 `workspace/RING-925/product_profile.json`，把 `sku` 改为 `RING-925`。填写产品、词根、红线和确认过的竞品。
+1. 在 Codex 中按 [Skill](SKILL.md) 提供种子 ASIN 或 Amazon 商品链接。Codex 会读取商品页、自动生成 `workspace/{SKU}/product_profile.json`，并继续筛选竞品。可附自己的 SKU 和目标站点。以下命令以 `RING-925` 为例。
 2. 从卖家精灵导出两类 `.xlsx` 报表，放入 `workspace/RING-925/raw_exports/`。
 3. 运行导入，在 Codex 桌面端按 [Skill](SKILL.md) 处理 `pending/`，将结果写入 `tagged/` 同编号的 JSON。
 4. 执行校验和导出。校验报错时先修正批次文件。

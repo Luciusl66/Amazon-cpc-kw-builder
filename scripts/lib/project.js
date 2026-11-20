@@ -104,9 +104,9 @@ function loadProject(sku) {
     if (seen.has(item.asin)) throw new Error('档案包含重复 ASIN：' + item.asin);
     seen.add(item.asin);
   }
-  if (profile.competitors.filter(item => item.tier !== 'similar').length > 10 ||
-      profile.competitors.filter(item => item.tier === 'similar').length > 3) {
-    throw new Error('竞品上限为 10 个核心竞品和 3 个相似品');
+  // 保留旧档案的总容量，允许按研究证据调整各层数量。
+  if (profile.competitors.length > 13) {
+    throw new Error('档案中的竞品和种子 ASIN 合计不得超过 13 个');
   }
   return {
     profile, directory,

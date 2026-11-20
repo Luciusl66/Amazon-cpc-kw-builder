@@ -13,7 +13,7 @@ npm test
 
 ## 2. 建档并准备报表
 
-对于示例 SKU `RING-925`，复制模板到 `workspace/RING-925/product_profile.json`。目录名和档案中的 `sku` 必须一致。按实际产品改写核心词根、复合限定、正向属性、冲突红线和竞品品牌。在 `competitors` 中填写竞品 ASIN、层级、主力子体说明和入选理由。每个 SKU 最多 10 个核心竞品（含种子）与 3 个相似品。
+对于示例 SKU `RING-925`，复制模板到 `workspace/RING-925/product_profile.json`。目录名和档案中的 `sku` 必须一致。按实际产品改写核心词根、复合限定、正向属性、冲突红线和竞品品牌。按[竞品筛选与核验](../references/competitor_research.md)为每个 SKU 建立目标为 10 个 ASIN 的竞品库。在 `competitors` 中填写入选 ASIN、层级、主力子体说明和入选理由。目标商品若用于反查，可额外以 `seed` 存档。
 
 从卖家精灵手动导出同一站点的 `.xlsx` 报表，将原文件放入 `workspace/RING-925/raw_exports/`。建议在文件名中标注周期和日期。例如：
 

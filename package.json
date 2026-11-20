@@ -1,0 +1,18 @@
+{
+  "name": "amazon-cpc-kw-builder",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "ingest": "node --disable-warning=ExperimentalWarning scripts/01_ingest_and_clean.js",
+    "validate": "node --disable-warning=ExperimentalWarning scripts/02_validate_batches.js",
+    "export": "node --disable-warning=ExperimentalWarning scripts/03_export_cpc_pack.js",
+    "test": "node --disable-warning=ExperimentalWarning scripts/smoke_test.js"
+  },
+  "dependencies": {
+    "exceljs": "4.4.0"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,48 @@
+{
+  "sku": "REPLACE-SKU",
+  "product_info": {
+    "marketplace": "US",
+    "product_type": "",
+    "selling_points": [],
+    "material": "",
+    "craft": "",
+    "specifications": {},
+    "target_audience": []
+  },
+  "core_category_roots": [
+    "ring",
+    "band"
+  ],
+  "compound_modifiers": [
+    "925 sterling silver",
+    "cubic zirconia",
+    "gift for her"
+  ],
+  "stop_words": [
+    "for",
+    "with",
+    "in",
+    "on",
+    "of",
+    "and",
+    "the",
+    "a",
+    "to"
+  ],
+  "positive_attributes": {
+    "material": [],
+    "audience": [],
+    "style": [],
+    "occasion": [],
+    "feature": []
+  },
+  "conflict_redlines": {
+    "material": [],
+    "specification": [],
+    "audience": [],
+    "compliance": []
+  },
+  "competitor_brands": [],
+  "exact_negatives": [],
+  "competitors": []
+}

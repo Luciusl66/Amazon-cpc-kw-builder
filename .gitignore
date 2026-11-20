@@ -1,0 +1,4 @@
+node_modules/
+workspace/*/
+!workspace/_template/
+!workspace/_template/product_profile.json
